@@ -9,6 +9,12 @@ export interface WordProps {
 function Word({ text }: WordProps) {
     const [active, setActive] = useState(false);
 
+    const makeActive = () => {
+        if (active == false) {
+            setActive(true);
+        }
+    }
+
     useEffect(() => {
         setTimeout(() => {
             setActive(false);
@@ -16,7 +22,7 @@ function Word({ text }: WordProps) {
     }, [active]);
 
     return (
-        <div className={`word ${active ? "active" : ""}`} onMouseEnter={() => setActive(true)}>
+        <div className={`word ${active ? "active" : ""}`} onMouseEnter={() => makeActive()}>
             <div className="word-top">{text}</div>
             <div className="word-bottom">{text}</div>
         </div>
