@@ -1,0 +1,75 @@
+@import '../../../styles/vars.scss';
+
+#quote {
+    text-decoration: none;
+    color: transparent;
+}
+
+.scroll-icon {
+    width: 4rem;
+    height: 6rem;
+    margin: auto;
+    border: .3rem solid $color-gray;
+    border-radius: 5rem;
+    margin-top: 7rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 350ms $primary-cubic-bezier;
+    opacity: 1;
+    visibility: visible;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &.pop-in {
+        transform: scale(0);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.pop-out {
+        transform: scale(1.25);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    & .wheel {
+        position: absolute;
+        width: 1em;
+        height: 2rem;
+        border: .175rem solid $color-gray;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    & .wheel::before {
+        content: '';
+        background-image: linear-gradient(0deg, $color-gray 2px, transparent 1px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -100%;
+        bottom: 0;
+        background-size: 100% 6px;
+        opacity: .5;
+        animation: wheel-scroll .5s ease-in-out infinite;
+    }
+
+    @keyframes wheel-scroll {
+        0% {
+            transform: translateY(0);
+            opacity: .5;
+        }
+        40%, 50% {
+            opacity: .8;
+        }
+        90%, 100% {
+            transform: translateY(50%);
+            opacity: .5;
+        }
+    }
+}

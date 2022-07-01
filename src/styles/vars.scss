@@ -24,7 +24,7 @@ $primary-cubic-bezier: cubic-bezier(.175, .885, .32, 1.275);
 // Mixins
 @mixin offCenter {
     position: absolute;
-    //top: 55vh;
+    top: 5vh;
     left: 50%;
     transform: translate(-50%, 25vh);
     z-index: 0;

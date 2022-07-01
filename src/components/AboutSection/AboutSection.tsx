@@ -3,6 +3,7 @@ import React from 'react';
 import PrimaryHeader from '../PrimaryHeader';
 import PrimarySub from '../PrimarySub';
 import HeroButton from '../HeroButton';
+import ScrollIcon from '../ScrollIcon';
 
 import './styles/AboutSection.scss';
 
@@ -13,6 +14,7 @@ function AboutSection() {
             <PrimaryHeader />
             <PrimarySub />
             <HeroButton text="My Portfolio" />
+            <ScrollIcon />
         </div>
     </main>
   );
