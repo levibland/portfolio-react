@@ -1,0 +1,35 @@
+@import '../../../styles/vars.scss';
+
+.primary-sub {
+    color: $color-gray;
+    line-height: 1;
+    font-size: 3rem;
+    display: block;
+
+    @media only screen and (max-width: 44.375em) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 31.275em) {
+        font-size: 1.75rem;
+    }
+}
+
+.line-wrapper {
+    opacity: 1;
+    visibility: visible;
+    transform-origin: 50% 100%;
+    transition: all 300ms ease-out;
+
+    &.slide-left {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(15%);
+    }
+
+    &.slide-right {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-15%);
+    }
+}

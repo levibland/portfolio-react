@@ -1,0 +1,46 @@
+@import '../../../styles/vars.scss';
+
+.primary-header {
+    margin: 0;
+    font-size: 10.5rem;
+    color: $color-white;
+    letter-spacing: 4px;
+    opacity: 1;
+    visibility: visible;
+    transform-origin: 50% 100%;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+
+    @media only screen and (max-width: 62.5em) {
+        font-size: 8rem;
+    }
+
+    @media only screen and (max-width: 44.375em) {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+        font-size: 4.5rem;
+        letter-spacing: .3rem;
+        span {
+            display: block;
+        }
+    }
+
+    &.slide-down {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-50%);
+    }
+
+    &.slide-left {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(10rem);
+    }
+}
+
+.pink-text {
+    color: $fuchsia;
+}
