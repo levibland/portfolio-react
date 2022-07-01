@@ -1,1 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inconsolata&family=Staatliches&display=swap');
+
+// Fonts
+$font-primary: 'Staatliches', sans-serif;
+$font-secondary: 'Inconsolata', sans-serif;
+$font-display: 'Fugaz One', sans-serif;
+
+// Colors
+$primary-dark: #22262a;
+$mid-dark: #343a41;
+$mid-dark-2: #31363b;
+$secondary-dark: #171a1d;
+$ternary-dark: #252a2e;
+
+$fuchsia: #ff1482;
+
+$color-gray: #94a4b4;
+$color-white: #fff;
+$color-black: #000;
+
+// Transition functions
+$primary-cubic-bezier: cubic-bezier(.175, .885, .32, 1.275);
+
+// Mixins
+@mixin offCenter {
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+    transform: translate(-50%, 25vh);
+    z-index: 0;
+}
