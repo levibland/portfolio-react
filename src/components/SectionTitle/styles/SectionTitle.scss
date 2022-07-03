@@ -19,10 +19,12 @@
         transition: all 300ms ease-in-out;
         visibility: visible;
         opacity: 1;
+
         &.slide-up {
             transform: translateY(10rem);
             visibility: hidden;
             opacity: 0;
+            
             @media only screen and (max-width: 60em) {
                 visibility: visible;
                 opacity: 1;

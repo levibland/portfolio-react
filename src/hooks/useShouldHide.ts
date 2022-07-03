@@ -5,7 +5,7 @@ const useShouldHide = (y: number) => {
 
     console.log(scrollY);
 
-    if (y < scrollY) return true;
+    if (y <= scrollY) return true;
 
     return false;
 };
