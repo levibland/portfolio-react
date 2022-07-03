@@ -61,10 +61,10 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 12px;
-  background-color: #ff1482;
+  background-color: $fuchsia;
 }
 
 ::selection {
   color: #fff;
-  background: #ff1482;
+  background: $fuchsia;
 }
