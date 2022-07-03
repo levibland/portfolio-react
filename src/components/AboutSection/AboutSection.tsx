@@ -61,10 +61,10 @@ function AboutSection() {
             <ScrollIcon />
             <Quote quote={aureliusQuote} name="Marcus Aurelius" />
             <SectionTitle text="Skills" show={930} />
-            <HomeCards card1={card1} card2={card2} card3={card3} />
+            <HomeCards card1={card1} card2={card2} card3={card3} animate={1050} />
             <Quote quote={senecaQuote} name="Seneca" />
             <SectionTitle text="Info" show={2010} />
-            <HomeCards card1={card4} card2={card5} card3={card6} />
+            <HomeCards card1={card4} card2={card5} card3={card6} animate={2090} />
         </div>
         <Footer />
     </main>
