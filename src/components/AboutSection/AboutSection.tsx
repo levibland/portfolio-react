@@ -7,6 +7,7 @@ import ScrollIcon from '../ScrollIcon';
 import Quote from '../Quote';
 import SectionTitle from '../SectionTitle';
 import HomeCards from '../HomeCards';
+import Footer from '../Footer';
 
 import Typescript from '../../assets/tslogo.png';
 import Rust from '../../assets/rustlogo.png';
@@ -65,6 +66,7 @@ function AboutSection() {
             <SectionTitle text="Info" />
             <HomeCards card1={card4} card2={card5} card3={card6} />
         </div>
+        <Footer />
     </main>
   );
 }

@@ -38,6 +38,12 @@
         opacity: 0;
         transform: translateY(4rem);
     }
+
+    &.slide-down {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
 }
 
 .button-bottom {

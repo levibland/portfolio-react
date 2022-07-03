@@ -1,5 +1,6 @@
 import React from 'react';
 import useLoading from '../../hooks/useLoading';
+import useShouldHide from '../../hooks/useShouldHide';
 
 import Word from './Word';
 
@@ -10,7 +11,7 @@ function PrimarySub() {
 
     return (
         <sub className="primary-sub">
-            <div className={`line-wrapper ${loading ? "slide-left" : ""}`}>
+            <div className={`line-wrapper ${loading ? "slide-left" : ""} ${useShouldHide(270) ? "slide-right" : ""}`}>
                 <Word text="I'm" />
                 <Word text="a" />
                 <Word text="software" />
@@ -21,7 +22,7 @@ function PrimarySub() {
                 <Word text="New" />
                 <Word text="Zealand" />
             </div>
-            <div className={`line-wrapper ${loading ? "slide-right" : ""}`}>
+            <div className={`line-wrapper ${loading ? "slide-right" : ""} ${useShouldHide(310) ? "slide-left" : ""}`}>
                 <Word text="Get" />
                 <Word text="in" />
                 <Word text="touch" />

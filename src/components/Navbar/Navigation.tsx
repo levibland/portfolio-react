@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useLoading from '../../hooks/useLoading';
 
 import './styles/Navigation.scss';
 
@@ -10,10 +11,12 @@ function Navigation() {
         setOpen(!open);
     }
 
+    const loading = useLoading();
+
     return (
         <div>
             <input className="nav-checkbox" type="checkbox" id="nav-toggle" checked={open} onClick={toggle} />
-            <label className="nav-button" htmlFor="nav-toggle">
+            <label className={loading ? "nav-button slide-left" : "nav-button"} htmlFor="nav-toggle">
                 <div className="nav-line"></div>
                 <div className="nav-line"></div>
                 <div className="nav-line"></div>
