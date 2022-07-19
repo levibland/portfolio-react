@@ -55,7 +55,7 @@ function AboutSection() {
   return (
     <main className="about">
         <div className="wrapper">
-            <PrimaryHeader />
+            <PrimaryHeader normal="Hi I'm" pink="Levi Bland" />
             <PrimarySub />
             <HeroButton text="My Portfolio" />
             <ScrollIcon />

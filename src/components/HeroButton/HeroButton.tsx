@@ -13,7 +13,7 @@ function HeroButton({ text }: HeroButtonProps) {
     const loading = useLoading();
 
     return (
-        <Link to="/" className={`hero-button ${loading ? "slide-up" : ""} ${useShouldHide(395) ? "slide-down" : ""}`}>
+        <Link to="/portfolio" className={`hero-button ${loading ? "slide-up" : ""} ${useShouldHide(395) ? "slide-down" : ""}`}>
             <button className="button-top">{text}</button>
             <button className="button-bottom">{text}</button>
         </Link>
