@@ -27,7 +27,7 @@ function Navigation() {
                         <Link to="/" onClick={toggle} className="nav-link"><span className="white">About</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" onClick={toggle} className="nav-link"><span className="white">Portfolio</span></Link>
+                        <Link to="/portfolio" onClick={toggle} className="nav-link"><span className="white">Portfolio</span></Link>
                     </li>
                 </ul>
             </nav>
