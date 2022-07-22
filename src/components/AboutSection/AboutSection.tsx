@@ -56,7 +56,7 @@ function AboutSection() {
     <main className="about">
         <div className="wrapper">
             <PrimaryHeader normal="Hi I'm" pink="Levi Bland" />
-            <PrimarySub />
+            <PrimarySub sentence1={"I'm a software engineer based in Auckland, New Zealand"} sentence2={"Get in touch and let's make something special"} />
             <HeroButton text="My Portfolio" />
             <ScrollIcon />
             <Quote quote={aureliusQuote} name="Marcus Aurelius" />

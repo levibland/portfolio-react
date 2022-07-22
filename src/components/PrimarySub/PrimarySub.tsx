@@ -6,31 +6,24 @@ import Word from './Word';
 
 import './styles/PrimarySub.scss';
 
-function PrimarySub() {
+export interface PrimarySubComponents {
+    sentence1: string,
+    sentence2: string,
+}
+
+function PrimarySub({ sentence1, sentence2 }: PrimarySubComponents) {
     const loading = useLoading();
+
+    const words1 = sentence1.split(' ');
+    const words2 = sentence2.split(' ');
 
     return (
         <sub className="primary-sub">
             <div className={`line-wrapper ${loading ? "slide-left" : ""} ${useShouldHide(270) ? "slide-right" : ""}`}>
-                <Word text="I'm" />
-                <Word text="a" />
-                <Word text="software" />
-                <Word text="engineer" />
-                <Word text="based" />
-                <Word text="in" />
-                <Word text="Auckland," />
-                <Word text="New" />
-                <Word text="Zealand" />
+                {words1.map(word => <Word text={word} />)}
             </div>
             <div className={`line-wrapper ${loading ? "slide-right" : ""} ${useShouldHide(310) ? "slide-left" : ""}`}>
-                <Word text="Get" />
-                <Word text="in" />
-                <Word text="touch" />
-                <Word text="and" />
-                <Word text="let's" />
-                <Word text="make" />
-                <Word text="something" />
-                <Word text="special" />
+                {words2.map(word => <Word text={word} />)}
             </div>
         </sub>
     );
